@@ -19,26 +19,27 @@ public class Ruin {
 	    double j = startAmount;
 	    
 	    
-	    while(j < winlimit&&j>0) {
-			double k = Math.random();
-			if(k>winchance) {
-				System.out.println("Success");
-			    j++;}
-			else if(k<winchance) {
-				System.out.println("Ruin");
-				j--;
-			System.out.println(j);
+	    //while(j < winlimit&&j>0) {
+			//double k = Math.random();
+			//if(k>winchance) {
+				//System.out.println("Success");
+			    //j++;}
+			//else if(k<winchance) {
+				//System.out.println("Ruin");
+				//j--;
+			//System.out.println(j);
 			
-		}
+		//}
 	    
-		//for(int i = totalSimulations; i<= 0; i++) {
-			//while(j < winlimit||j>0) {
-				//double k = Math.random();
-				//if(k>winchance)
-				  //  j++;
-				//else if(k<winchance)
-					//j--;
-				//System.out.println(j);
+		for(int i = totalSimulations; i<= 0; i++) {
+			while(j < winlimit||j>0) {
+				double k = Math.random();
+				if(k>winchance)
+				   j++;
+				System.out.println("Simulation" + i + “：“ + j + ”WIN“ )；
+				else if(k<winchance)
+					j--;
+				System.out.println("Simulation" + i + “：“ + j + ”LOOSE“ )；
 			}
 		}
 	}
